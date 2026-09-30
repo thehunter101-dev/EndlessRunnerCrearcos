@@ -2,7 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://ommvc38fwnn3" path="res://assets/Backgrounds/background.png" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://dnywdixq180wb" path="res://escenarios/Player.tscn" id="2_h2yge"]
-[ext_resource type="PackedScene" uid="uid://cn4ysvtt4t6la" path="res://escenarios/ChuckA_1.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cn4ysvtt4t6la" path="res://escenarios/nivel1/ChuckA_1.tscn" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://bbjd7r3ual1tn" path="res://src/ChunkManager.cs" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://2n3qr4d3lpad" path="res://escenarios/nivel1/ChuckA_2.tscn" id="5_7mycd"]
 
 [node name="Main" type="Node2D" unique_id=1173848846]
 
@@ -19,6 +21,10 @@ zoom = Vector2(1.5, 1.5)
 position = Vector2(73, 562)
 
 [node name="chunkManager" type="Node2D" parent="." unique_id=549186042]
+script = ExtResource("3_lquwl")
 
-[node name="Node2D" parent="chunkManager" unique_id=98885817 instance=ExtResource("3_h2yge")]
+[node name="chuckA_1" parent="chunkManager" unique_id=98885817 instance=ExtResource("3_h2yge")]
 position = Vector2(16, 58)
+
+[node name="chuckA_2" parent="chunkManager" unique_id=1162211740 instance=ExtResource("5_7mycd")]
+position = Vector2(1713, 58)
