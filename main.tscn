@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b0sm5p677jvck"]
+
+[ext_resource type="Texture2D" uid="uid://ommvc38fwnn3" path="res://assets/Backgrounds/background.png" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://dnywdixq180wb" path="res://escenarios/Player.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cn4ysvtt4t6la" path="res://escenarios/ChuckA_1.tscn" id="3_h2yge"]
+
+[node name="Main" type="Node2D" unique_id=1173848846]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1403371544]
+z_index = -1
+position = Vector2(565, 321)
+texture = ExtResource("1_0xm2m")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1928034435]
+position = Vector2(385, 429)
+zoom = Vector2(1.5, 1.5)
+
+[node name="CharacterBody2D" parent="." unique_id=1310342697 instance=ExtResource("2_h2yge")]
+position = Vector2(73, 562)
+
+[node name="chunkManager" type="Node2D" parent="." unique_id=549186042]
+
+[node name="Node2D" parent="chunkManager" unique_id=98885817 instance=ExtResource("3_h2yge")]
+position = Vector2(16, 58)
