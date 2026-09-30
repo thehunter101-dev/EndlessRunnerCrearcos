@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ommvc38fwnn3" path="res://assets/Backgrounds/background.png" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://dnywdixq180wb" path="res://escenarios/Player.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://cn4ysvtt4t6la" path="res://escenarios/nivel1/ChuckA_1.tscn" id="3_h2yge"]
-[ext_resource type="Script" uid="uid://bbjd7r3ual1tn" path="res://src/ChunkManager.cs" id="3_lquwl"]
+[ext_resource type="Script" uid="uid://3h8fl0wjabtq" path="res://src/chunk_manager.gd" id="3_lquwl"]
 [ext_resource type="PackedScene" uid="uid://2n3qr4d3lpad" path="res://escenarios/nivel1/ChuckA_2.tscn" id="5_7mycd"]
 
 [node name="Main" type="Node2D" unique_id=1173848846]
@@ -24,7 +24,7 @@ position = Vector2(73, 562)
 script = ExtResource("3_lquwl")
 
 [node name="chuckA_1" parent="chunkManager" unique_id=98885817 instance=ExtResource("3_h2yge")]
-position = Vector2(16, 58)
+position = Vector2(-976, 297)
 
 [node name="chuckA_2" parent="chunkManager" unique_id=1162211740 instance=ExtResource("5_7mycd")]
-position = Vector2(1713, 58)
+position = Vector2(-392, 59)
